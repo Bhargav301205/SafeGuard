@@ -1,0 +1,31 @@
+{
+  "model_type": "LogisticRegressionClassifier",
+  "version": "1.0.0",
+  "features": [
+    "peak_g",
+    "angular_velocity_dps",
+    "speed_drop_kmh",
+    "post_impact_variance"
+  ],
+  "feature_means": [
+    2.892000198364258,
+    185.60000610351562,
+    22.84000015258789,
+    0.5
+  ],
+  "feature_stds": [
+    1.2515344619750977,
+    124.21207427978516,
+    21.46565818786621,
+    0.4682658910751343
+  ],
+  "weights": [
+    1.2007758441188738,
+    1.2866534834916874,
+    1.2129630862373713,
+    -0.9388739503561628
+  ],
+  "bias": -0.6659002240298311,
+  "decision_threshold": 0.5,
+  "accuracy": 100.0
+}

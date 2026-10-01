@@ -1,0 +1,115 @@
+# ==========================================
+# SafeGuard Root .gitignore
+# ==========================================
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Environment and Secrets (CRITICAL: Never commit credentials)
+*.env
+*.env.*
+.env
+!.env.example
+!backend/.env.example
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+
+# Executables & Large Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+cloudflared.exe
+
+# Databases & SQLite
+*.db
+*.sqlite
+*.sqlite3
+safeguard.db
+backend/safeguard.db
+
+# Logs and Temporary Files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+inst_user_settings.tmp
+SafeGuardFix.xml
+
+# Python & Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+.venv/
+env/
+ENV/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/*/__pycache__/
+
+# Dart & Flutter
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+mobile-app/build/
+mobile-app/.dart_tool/
+mobile-app/.flutter-plugins
+mobile-app/.flutter-plugins-dependencies
+mobile-app/.pub-cache/
+mobile-app/.pub/
+
+# Android build & local configuration
+**/android/.gradle/
+**/android/local.properties
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/android/captures/
+**/android/.cxx/
+**/android/app/.cxx/
+*.jks
+*.keystore
+
+# iOS / macOS build files & pods
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/ephemeral/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Podfile.lock
+**/ios/DerivedData/
+
+# IDE & Editor Configurations
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
